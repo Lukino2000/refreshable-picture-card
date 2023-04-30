@@ -138,7 +138,6 @@ class ResfeshablePictureCard extends LitElement {
     if (!/:\/\//.test(urlstring)) {
       urlstring = window.location.origin + urlstring;
     }
-    console.log('urlstring=', urlstring);
     const url = new URL(urlstring);
     const timestamp = new Date().getTime();
     url.searchParams.set('_t', timestamp);
